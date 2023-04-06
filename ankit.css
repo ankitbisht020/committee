@@ -12,9 +12,11 @@ header {
   
 }
 .banner {
+  
+
   margin-top: -50px;
   background-position: top center;
- 
+  
 }
 
 nav {
@@ -60,18 +62,22 @@ main {
   text-align: center;
 }
 
-.span{
+.span {
   background: linear-gradient(to top left, #33ccff 0%, #ff99cc 100%);
   padding: 10px 55px;
   border-radius: 20px;
   font-weight: bold;
   transition: padding 0s ease-in-out 0s;
+
 }
 
 .span:hover{
-             padding: 20px 60px;
-            letter-spacing: 15px; 
+  padding: 20px 60px;
+  letter-spacing: 15px;
 }
+
+
+
 
 iframe {
   height: 70vh;
@@ -96,7 +102,7 @@ footer img{
     width:200px;
     border-radius: 45%;
 }
-.sc {
+.sc{
 
   text-decoration: none;
   word-spacing: 4px;
@@ -108,8 +114,8 @@ footer img{
   transition: padding 0s ease-in-out 0s;
 }
 .sc:hover{
-             padding: 20px 60px;
-            letter-spacing: 15px; 
+  padding: 10px;
+  letter-spacing: 8px;
 }
 i{
     margin:6px;
@@ -130,7 +136,7 @@ i{
 h2{
     font-size: 30px;
     padding-top: 30px;
-    text-transform:uppercase;
+    text-transform: uppercase;
     
 }
 
