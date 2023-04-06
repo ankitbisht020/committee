@@ -7,17 +7,14 @@ body{
 }
 
 header {
-  background-color: rgb(17, 124, 143);
-
-  background-attachment: fixed;
+  background-color: #a9aaff;
+  height: 180px;
+  
 }
 .banner {
-  background-image: url(Project_head.gif);
-  height: 12vw;
-  background-size: 25%;
-  background-repeat: no-repeat;
+  margin-top: -50px;
   background-position: top center;
-  background-attachment: fixed;
+ 
 }
 
 nav {
@@ -108,8 +105,11 @@ footer img{
   background-color: rgb(125 125 125 / 25%);
   margin:8px 1px;
   border-radius: 50px; 
-
-
+  transition: padding 0s ease-in-out 0s;
+}
+.sc:hover{
+             padding: 20px 60px;
+            letter-spacing: 15px; 
 }
 i{
     margin:6px;
