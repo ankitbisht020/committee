@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM submition</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <!-- <link rel="stylesheet" href="css1.css"> -->
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        section.sec1{
+            border: 3px solid black;
+            padding: 2%;
+            width:auto;
+            display:flex;
+            overflow: auto;
+            margin: 4%;
+            background-color: aqua;
+         }
+         input[type="text"],
+         input[type=date],
+         input[type=number],
+         select
+         {
+            width: 100%;
+            padding: 10px;
+         }
+         input[type=submit],
+         input[type=reset]
+         {
+            padding: 1%;
+            width: 85px;
+            background-color: cadetblue;
+         }
+         
+         input[type=reset]:hover{
+            background-color: rgb(175, 236, 238);
+         }
+         input[type=submit]:hover{
+            background-color: rgb(175, 236, 238);
+         }
+        
+         
+        nav{
+
+           text-align: center;
+           font-size: 50px;
+           text-transform: uppercase;
+           padding: 5px;
+         
+           position: -webkit-sticky;
+           position: sticky;
+           top: 0;
+           background-color: rgb(152, 152, 152);
+           border: 2px solid black;
+
+          }
+          
+        
+        section.sec2{
+            border: 1px solid lightgray;
+            width:40%;
+          
+            background-color: #f2f2f2;
+            padding: 2%;
+            overflow: auto;
+            grid-template-columns: auto;
+            
+        }
+        
+        h1{
+            font-size: 30px;
+        }
+
+        label{
+            font-size: 23px;
+            
+        }
+        .object1{
+            position: relative;
+           
+            margin-top: 150px;
+            margin-left: 70px;   
+            width: 908px;
+            height: 316px;
+           animation: bouncing 06s ease 0s infinite alternate  ; 
+           
+        }
+        @keyframes bouncing {
+            0%{
+                bottom: -1000px;
+                box-shadow: 0 0 5px rgb(0,0,0,2.5);
+            }
+            50%{
+                bottom: -400px;
+            }
+            
+            100%{
+                bottom: 180px;
+                box-shadow: 0 5px 5px rgb(0,0,0,0.1);
+            }
+        }
+         
+        .nav{
+            background-color:  rgb(118, 182, 205);
+            margin-top: 30px;   
+            height: 25px;    
+       }
+        
+
+        
+    </style>
+</head>
+<body>
+    
+    <nav><div >form submition</div></nav>
+    
+    <form action="#"></form>    
+    <section class="sec1">
+                        
+        <section class="sec2">
+            <h2>User deatails</h2>
+            <hr>
+        <label for="fname">First name:*</label>
+        <input type="text" id="fname" name="fname" placeholder="Ankit" required>
+        <br><br>
+        <label  for="lname">Last name:</label>
+        <input  type="text" id="lname" name="lname" placeholder="Bisht">
+        <br><br>
+        <!-- <input type="button"> -->
+      <div>     <label for="email">Email:*</label>
+        <input type="text" id="email" name="email" placeholder="xyz@gmail.com" required>
+        <br><br>
+        </div>
+        <div>
+            <label for="date">Date of birth:*</label>
+            <input type="date" id="date" name="date"required>
+            <br><br>
+        </div>
+        <div>
+            <label for="gender">Gender:*</label>
+           <!-- </select> -->
+            <select name="gender" required>
+            <option value="">Please select one…</option>
+            <option value="female">Female</option>
+            <option value="male">Male</option>
+            <option value="non-binary">Non-Binary</option>
+            <option value="other">Other</option>
+            <option value="Prefer not to answer">Perfer not to Answer</option>
+        </select><br><br><div>
+     
+          <label for="adds">Address:</label><br>
+          <div >
+    <textarea placeholder="Enter your address here" type="textarea" style="height: 200px; width: 450px;" ></textarea>
+    </div>
+    </div><br>
+        </div> 
+        <div>
+            <label for="pass">Enter password:*</label>
+            <input type="password" id="pass" name="pass"required>
+        </div>
+        <div>
+        <label for="pass" required="">Confirm password:*</label>
+        <input type="password" id="pass" name="pass"required>
+        <br><br>
+        </div><br>
+        <input type="submit" value="Save">
+        
+        <br><br><br>
+        <h2 >Payment information</h2>
+        <hr class="a">
+        <label for="payment" required="">Payment gateway:*</label>
+
+        <select name="payment" required>
+            <option value="">--Please select a card--</option>
+            <option value="visa">Visa</option>
+            <option value="mastercard">Mastercard</option>
+            <option value="rupay">Rupay</option>
+        </select><br><br>
+        <label for="no" >Card number:*</label>
+        <input type="number" id="no" name="no" placeholder="XXXX-XXXX-XXXX"><br><br>
+        
+        <label for="exdate" >Expiration date:</label>
+        <input type="date" id="exdate " name="exdate"required><br><br>
+        <label for="cvv">Enter CVV:</label>
+        <input type="number" id="cvv" name="cvv" placeholder="123">
+        <br><br>
+        <input type="reset">
+        <input type="submit" value="pay now"> 
+        <p class="nav" style="font-size: 20px;">*This field is mandatory</p>
+        
+    </section >
+            <img class="object1" src="coerlogo.png" alt="HTML tutorial" width="35%"> <br> 
+        
+    </section>
+    </form>
+  
+
+    <!-- <input type="" -->
+</body>
+</html>
