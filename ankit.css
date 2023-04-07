@@ -26,6 +26,7 @@ nav {
   position: sticky;
   top: 0;
   display: flex;
+  z-index:1;
 }
 @media screen and (max-width: 600px) {
   nav {
