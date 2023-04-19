@@ -1,2 +1,2 @@
-# committee
-Website to contain the details of all committees of coer college.
+# COMMITTEE 
+Front-end website using basic HTML, CSS and Javascript.
